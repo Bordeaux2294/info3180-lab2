@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+<div class = "card">
+    <div class = "cardhead">
+        <img src= "{{url_for('static', filename='avatar.svg')}}" alt="profile picture image">
+        <h1>Trishanna Ford</h1>
+        <p>@bordeaux2294</p>
+        <p>St Catherine, Jamaica</p>
+        <p>{{datejoined}}</p>
+    </div>
+    <div class = "cardbody">
+        <p>I am a second year computing student with an interest in back-end web development. Front-end development is fine, but I prefer the problem solving aspects of development over the creative ones.</p>
+        <div class="row">
+            <div class="info">
+              <h4>389</h4>
+              <span>Posts</span>
+            </div>
+            <div class="info">
+              <h4>28</h4>
+              <span>Following</span>
+            </div>
+            <div class="info">
+              <h4>98,694</h4>
+              <span>Followers</span>
+            </div>
+            <button type="button" class ="btn">Follow</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
